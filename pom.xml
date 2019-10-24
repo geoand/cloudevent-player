@@ -42,6 +42,10 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jsonp</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-hibernate-validator</artifactId>
     </dependency>
     <dependency>
@@ -74,10 +78,6 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-undertow-websockets</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-jsonp</artifactId>
     </dependency>
   </dependencies>
   <build>
@@ -130,10 +130,10 @@
                 </goals>
                 <configuration>
                   <enableHttpUrlHandler>true</enableHttpUrlHandler>
-                  <additionalBuildArgs>
-                    <additionalBuildArg>--allow-incomplete-classpath</additionalBuildArg>
-                    <additionalBuildArg>-H:ReflectionConfigurationFiles=${project.basedir}/reflection-config.json</additionalBuildArg>
-                  </additionalBuildArgs>
+<!--                  <additionalBuildArgs>-->
+<!--                    <additionalBuildArg>&#45;&#45;allow-incomplete-classpath</additionalBuildArg>-->
+<!--                    <additionalBuildArg>-H:ReflectionConfigurationFiles=${project.basedir}/reflection-config.json</additionalBuildArg>-->
+<!--                  </additionalBuildArgs>-->
                 </configuration>
               </execution>
             </executions>
